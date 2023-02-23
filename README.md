@@ -1,4 +1,5 @@
 Movie List App
+
 This is a simple React app that allows you to manage a list of movies. The app uses hooks and props to manage the state of the movie list and allows you to add movies to the list, as well as sort them by name or rating.
 
 Features
