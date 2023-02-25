@@ -36,3 +36,75 @@
     transform: rotate(360deg);
   }
 }
+
+.movie-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 16px;
+  overflow: hidden;
+}
+
+.movie-poster {
+  width: 30%;
+}
+
+.movie-poster img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-info {
+  padding: 16px;
+}
+
+.movie-title {
+  font-size: 48px;
+  margin: 0 0 8px;
+}
+
+.movie-description {
+  font-size: 16px;
+  margin: 0 0 16px;
+}
+
+.movie-rating {
+  font-size: 20px;
+  margin: 0;
+}
+.add-movie-form {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-movie-form input {
+  padding: 8px;
+  margin: 8px 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-movie-form button {
+  padding: 8px;
+  margin-top: 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-movie-form button:hover {
+  background-color: #0062cc;
+}
+
