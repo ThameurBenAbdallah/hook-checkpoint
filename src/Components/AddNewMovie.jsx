@@ -5,16 +5,19 @@ const AddMovieForm = ({ onAddMovie }) => {
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
     const [posterUrl, setPosterUrl] = useState('');
+    const [trailerLink, setTrailerLink] = useState('');
     const [rating, setRating] = useState('');
   
     const handleSubmit = (e) => {
       e.preventDefault();
-      const newMovie = { id: Math.random(), title:name, description:description, posterUrl: posterUrl, rating: rating };
+      const videoId = trailerLink.split("v=")[1];
+      const newMovie = { id: Math.random(), title:name, description:description, posterUrl: posterUrl, rating: rating, trailerLink: videoId };
       onAddMovie(newMovie);
       setName('');
       setDescription('');
       setPosterUrl('');
       setRating('');
+      setTrailerLink('');
     };
   
     return (
@@ -38,6 +41,13 @@ const AddMovieForm = ({ onAddMovie }) => {
           placeholder="Poster URL"
           value={posterUrl}
           onChange={(e) => setPosterUrl(e.target.value)}
+          required
+        />
+        <input
+          type="text"
+          placeholder="Trailer URL"
+          value={trailerLink}
+          onChange={(e) => setTrailerLink(e.target.value)}
           required
         />
         <input
